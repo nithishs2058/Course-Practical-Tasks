@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Nithish S through the accessible contact form.">
+    <meta name="description" content="Contact Nithish S through the personal portfolio contact page.">
     <meta name="author" content="Nithish S">
     <title>Contact | Nithish S Portfolio</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<input type="checkbox" id="theme-toggle" class="theme-toggle">
 
 <header role="banner">
     <h1>Contact Me</h1>
@@ -19,41 +24,67 @@
         <a href="projects1.html">Projects</a>
         <a href="contact1.html" aria-current="page">Contact</a>
     </nav>
+
+    <label for="theme-toggle" class="theme-label">
+        Toggle Theme
+    </label>
 </header>
 
 <main id="main-content">
-    <section aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Get in Touch</h2>
+
+    <section class="hero">
+        <h2>Get in Touch</h2>
+        <p>Have a question or want to connect? Send me a message using the form below.</p>
+    </section>
+
+    <section>
+        <h2>Contact Form</h2>
 
         <form action="#" method="post" aria-label="Contact form">
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"
-                   autocomplete="name" required>
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                placeholder="Enter your name"
+                required
+            >
 
-            <br><br>
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                placeholder="Enter your email"
+                required
+            >
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"
-                   autocomplete="email" required>
+            <label for="subject">Subject</label>
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Enter subject"
+                required
+            >
 
-            <br><br>
-
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required>
-
-            <br><br>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"
-                      rows="5" required></textarea>
-
-            <br><br>
+            <label for="message">Your Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message"
+                required
+            ></textarea>
 
             <button type="submit">Send Message</button>
 
         </form>
     </section>
+
 </main>
 
 <footer role="contentinfo">
