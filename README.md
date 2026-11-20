@@ -1,45 +1,40 @@
-# HTML5 Semantic Structure & Accessibility
+# Task 2 – Advanced CSS3 & Responsive Architecture
 
-## Project Description
-A multi-page personal portfolio website developed using modern HTML5 semantic elements and accessibility standards.
+## Project Overview
+Enhanced the existing personal portfolio website using modern CSS3 techniques to create a clean, attractive, and responsive user interface.
 
-## Pages Included
-1. **Home** – Introduction and skills.
-2. **About** – Personal information, education and interests.
-3. **Projects** – Project details and descriptions.
-4. **Contact** – Accessible contact form.
-
-## Key Features
-- Semantic HTML5 elements.
-- ARIA labels and roles for screen readers.
-- SEO-friendly meta tags.
-- Keyboard-accessible navigation.
-- Accessible contact form.
-- Proper heading hierarchy.
-- Responsive-ready structure.
+## Features
+- **CSS Grid:** Used for structured two-dimensional page layouts.
+- **Flexbox:** Used for navigation, alignment, and component arrangement.
+- **Responsive Design:** Implemented mobile-first media queries for mobile, tablet, and desktop screens.
+- **CSS Variables:** Used reusable variables for colors, backgrounds, text, and other styling properties.
+- **Light/Dark Theme:** Added a CSS-based theme toggle.
+- **Hover Effects:** Added interactive visual effects to project cards and buttons.
+- **Accessibility:** Included visible keyboard focus indicators and reduced-motion support.
 
 ## Technologies Used
 - HTML5
 - CSS3
+- CSS Grid
+- Flexbox
+- Media Queries
+- CSS Variables
 
 ## Project Structure
 ```text
-Course-Practical-Tasks/
-│
+Task-2/
 ├── home1.html
 ├── about1.html
 ├── projects1.html
 ├── contact1.html
-└── README.md
+└── style1.css
 ```
 
 ## How to Run
-1. Download or clone the repository.
+1. Download or clone the project.
 2. Open `home1.html` in a web browser.
-3. Use the navigation menu to explore the pages.
+3. Navigate through the portfolio pages.
+4. Use the theme toggle to switch between light and dark modes.
 
-## Author
-Nithish S
-
-## Project Outcome
-Created a multi-page semantic HTML5 portfolio website focusing on accessibility, screen reader support and SEO optimization.
+## Outcome
+Successfully developed a visually polished and responsive portfolio website using advanced CSS3 concepts, providing a consistent experience across different screen sizes.
