@@ -1,40 +1,40 @@
-# Task 2 – Advanced CSS3 & Responsive Architecture
+## Task 3 – JavaScript Logic & State Management
 
-## Project Overview
-Enhanced the existing personal portfolio website using modern CSS3 techniques to create a clean, attractive, and responsive user interface.
+### Project Overview
+Developed an interactive, client-side To-Do List application using JavaScript to manage daily tasks with dynamic DOM manipulation and local data persistence.
 
-## Features
-- **CSS Grid:** Used for structured two-dimensional page layouts.
-- **Flexbox:** Used for navigation, alignment, and component arrangement.
-- **Responsive Design:** Implemented mobile-first media queries for mobile, tablet, and desktop screens.
-- **CSS Variables:** Used reusable variables for colors, backgrounds, text, and other styling properties.
-- **Light/Dark Theme:** Added a CSS-based theme toggle.
-- **Hover Effects:** Added interactive visual effects to project cards and buttons.
-- **Accessibility:** Included visible keyboard focus indicators and reduced-motion support.
+### Features
+- **Create:** Add new tasks to the task list.
+- **Read:** Display all available tasks dynamically.
+- **Update:** Edit existing tasks and mark them as completed.
+- **Delete:** Remove tasks from the list.
+- **Local Storage:** Automatically save tasks using `window.localStorage`.
+- **Task Filtering:** Filter tasks by All, Active, and Completed.
+- **DOM Manipulation:** Create and update HTML elements dynamically.
+- **Event Delegation:** Handle task actions using delegated event listeners.
 
-## Technologies Used
+### Technologies Used
 - HTML5
 - CSS3
-- CSS Grid
-- Flexbox
-- Media Queries
-- CSS Variables
+- JavaScript
+- DOM Manipulation
+- Browser Local Storage
 
-## Project Structure
+### Project Files
 ```text
-Task-2/
-├── home1.html
-├── about1.html
-├── projects1.html
-├── contact1.html
-└── style1.css
+Task-3/
+├── index.html
+├── style.css
+└── script.js
 ```
 
-## How to Run
-1. Download or clone the project.
-2. Open `home1.html` in a web browser.
-3. Navigate through the portfolio pages.
-4. Use the theme toggle to switch between light and dark modes.
+### How to Run
+1. Open the project website in a browser.
+2. Enter a task in the input field.
+3. Click the Add Task button.
+4. Edit, complete, or delete tasks.
+5. Use the All, Active, and Completed filters.
+6. Refresh the browser to verify that tasks are saved.
 
-## Outcome
-Successfully developed a visually polished and responsive portfolio website using advanced CSS3 concepts, providing a consistent experience across different screen sizes.
+### Outcome
+Successfully developed a fully functional To-Do List application with CRUD operations, advanced task filtering, dynamic DOM manipulation, event delegation, and Local Storage integration.
