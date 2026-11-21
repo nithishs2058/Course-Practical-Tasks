@@ -1,40 +1,48 @@
-## Task 3 – JavaScript Logic & State Management
+## Task 4 – Asynchronous JavaScript & RESTful APIs
 
 ### Project Overview
-Developed an interactive, client-side To-Do List application using JavaScript to manage daily tasks with dynamic DOM manipulation and local data persistence.
+Developed a real-time Weather Dashboard using asynchronous JavaScript and public REST APIs to retrieve and display weather information based on the user's city search.
 
 ### Features
-- **Create:** Add new tasks to the task list.
-- **Read:** Display all available tasks dynamically.
-- **Update:** Edit existing tasks and mark them as completed.
-- **Delete:** Remove tasks from the list.
-- **Local Storage:** Automatically save tasks using `window.localStorage`.
-- **Task Filtering:** Filter tasks by All, Active, and Completed.
-- **DOM Manipulation:** Create and update HTML elements dynamically.
-- **Event Delegation:** Handle task actions using delegated event listeners.
+- **Fetch API:** Retrieves real-time weather information from Open-Meteo.
+- **Async/Await:** Handles asynchronous API requests.
+- **Error Handling:** Handles invalid city names and network errors using try-catch-finally.
+- **JSON Parsing:** Processes nested JSON responses received from the API.
+- **City Search:** Allows users to search for weather information by city name.
+- **Dynamic DOM Manipulation:** Updates weather details dynamically.
+- **Weather Metrics:** Displays temperature, humidity, wind speed, precipitation, and feels-like temperature.
+- **Responsive Design:** Provides a user-friendly interface across different screen sizes.
 
 ### Technologies Used
 - HTML5
 - CSS3
 - JavaScript
-- DOM Manipulation
-- Browser Local Storage
+- Fetch API
+- Async/Await
+- RESTful APIs
+- JSON
+- Open-Meteo API
 
-### Project Files
+### Project Structure
 ```text
-Task-3/
+Task-4/
 ├── index.html
 ├── style.css
 └── script.js
 ```
 
+### API Used
+- **Geocoding API:** Converts city names into geographic coordinates.
+- **Weather Forecast API:** Retrieves current weather information.
+
+API Provider: [Open-Meteo](https://open-meteo.com/)
+
 ### How to Run
-1. Open the project website in a browser.
-2. Enter a task in the input field.
-3. Click the Add Task button.
-4. Edit, complete, or delete tasks.
-5. Use the All, Active, and Completed filters.
-6. Refresh the browser to verify that tasks are saved.
+1. Open the Task 4 website in a browser.
+2. Enter a city name in the search field.
+3. Click the Search button.
+4. View the current weather information.
+5. Search for another city to retrieve its weather details.
 
 ### Outcome
-Successfully developed a fully functional To-Do List application with CRUD operations, advanced task filtering, dynamic DOM manipulation, event delegation, and Local Storage integration.
+Successfully developed a dynamic Weather Dashboard using Fetch API, async/await, JSON parsing, error handling, and RESTful API integration to display current weather information based on city searches.
