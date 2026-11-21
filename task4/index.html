@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A real-time weather dashboard with city search.">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="weather-container">
+
+        <header class="header">
+            <div>
+                <span class="subtitle">WEATHER INFORMATION</span>
+                <h1>Weather<span>.</span></h1>
+                <p>Explore weather conditions around the world.</p>
+            </div>
+
+            <div class="weather-icon">☀️</div>
+        </header>
+
+        <section class="search-section">
+            <form id="search-form">
+                <label for="city-input">Search City</label>
+
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="city-input"
+                        placeholder="Enter city name..."
+                        autocomplete="off"
+                        value="Chennai"
+                        required
+                    >
+
+                    <button type="submit" id="search-button">
+                        Search
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <p id="status-message" role="status" aria-live="polite">
+            Loading weather information...
+        </p>
+
+        <section id="weather-content" class="weather-content" hidden>
+
+            <div class="location-section">
+                <div>
+                    <span class="label">CURRENT WEATHER</span>
+                    <h2 id="city-name">Chennai</h2>
+                    <p id="country-name">India</p>
+                </div>
+
+                <span id="weather-icon" class="main-weather-icon">☀️</span>
+            </div>
+
+            <div class="temperature-section">
+                <h2 id="temperature">--°C</h2>
+                <p id="weather-description">Clear sky</p>
+                <p id="feels-like">Feels like --°C</p>
+            </div>
+
+            <div class="weather-details">
+
+                <article class="detail-card">
+                    <span class="detail-icon">💧</span>
+                    <div>
+                        <p>Humidity</p>
+                        <h3 id="humidity">--%</h3>
+                    </div>
+                </article>
+
+                <article class="detail-card">
+                    <span class="detail-icon">🌬️</span>
+                    <div>
+                        <p>Wind Speed</p>
+                        <h3 id="wind-speed">-- km/h</h3>
+                    </div>
+                </article>
+
+                <article class="detail-card">
+                    <span class="detail-icon">🌧️</span>
+                    <div>
+                        <p>Precipitation</p>
+                        <h3 id="precipitation">-- mm</h3>
+                    </div>
+                </article>
+
+                <article class="detail-card">
+                    <span class="detail-icon">🌡️</span>
+                    <div>
+                        <p>Feels Like</p>
+                        <h3 id="feels-like-detail">--°C</h3>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="last-updated">
+                <p id="updated-time">Weather data updated recently</p>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p>Weather Dashboard | Powered by Open-Meteo</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
